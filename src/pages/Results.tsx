@@ -12,7 +12,7 @@ export default function Results(){
     let suggestedHeight = (experience == 0) ? .4887063655030799*height + 38.64065708418893 : 0.4722222222222222*height + 32.68650793650793
 
     const suggestedHeightFeet = (suggestedHeight - (suggestedHeight%12)) / 12
-    const suggestedHeightInches = Math.ceil(suggestedHeight%12)
+    const suggestedHeightInches = Math.floor(suggestedHeight%12)
 
 
     return(
